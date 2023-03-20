@@ -1,0 +1,130 @@
+
+
+dealing out the cars to the 4 players:
+this is better as an if statement:
+
+if (i == 1 || i == 5 || i == 9 || i == 13) {
+   playerHand1.add(stockPile.dealCard());
+}
+else if (i == 2 || i == 6 || i == 10 || i == 14) {
+   playerHand2.add(stockPile.dealCard());
+}
+else if (i == 3 || i == 7 || i == 11 || i == 15) {
+   playerHand3.add(stockPile.dealCard());
+}
+else {
+   playerHand4.add(stockPile.dealCard());
+}
+
+
+
+
+create class for this, parameter will be an array that represents the player hand
+
+then maybe pull each card out of playerHand into variables, then check:
+
+class checkWin (string[] playerHand) {
+   String playerFace1 = playerHand[1].substring(0, playerHand[1].indexOf(' '));
+   String playerFace2 = playerHand[2].substring(0, playerHand[2].indexOf(' '));
+   String playerFace3 = playerHand[3].substring(0, playerHand[3].indexOf(' '));
+   String playerFace4 = playerHand[4].substring(0, playerHand[4].indexOf(' '));
+   
+   if (playerFace1.equals(playerFace2) && playerFace2.equals(playerFace3) && playerFace3.equals(playerFace4)) {
+      System.out.println("We have a winner!");
+      winner = true;
+      System.out.println("Here is the winning hand:");
+      for (int j = 0; j < 4; j++) {
+         System.out.printf("%-19s" + (playerHand[j]);
+      }
+   }
+}
+
+
+
+
+method for replacing a card in the playerHand if matches first card in playerHand:
+
+public static void checkMatch (ArrayList<String> playerHand, String cardInRot, Stack<String> stockPile)
+   String matchFace = playerHand[1].substring(0, player[1].indexOf(' '));
+   if (matchFace.equals(cardInRot))) {
+      replace card in array index of count to cardInRot
+}
+
+
+
+
+if ((playerHand1.get(1).substring(0, (playerHand1.get(1).indexOf(' ')))    == cardInRot)) {
+   count++;
+   cardInRot = do the switching(method, parameters: playerHand, count, stockPile, returns new cardInRot if cswitch happened);
+}
+checkWin();
+
+
+// switching method
+public static void switchCard (ArrayList<String> playerHand, String cardInRot, Stack<String> stockPile, int count)
+
+   cardInRot = playerHand.get(count);
+   playerHand.set(count, stockPile.pop());
+   
+      
+   
+}
+
+
+!! (playerHand.set(count, stockPile.pop()));
+
+
+
+
+
+
+
+(outside of method, have counter for how many cards have already been replaced to know which of the four to replace)
+
+replace cardInRot variable with peeking at the top of the stockPile stack? String cardInRot = stockPile.peek(); , String faceInRoy = cardInRot.substring(0, cardInRot.indexOf(' '));
+
+
+
+
+         if (i % 4 == 0) {
+            System.out.println();
+         }// end of if 
+
+
+
+   cardInRot = stockPile.peek();
+
+while (!winner) {
+
+   cardInRot = stockPile.peek();
+   //somehow repeat for each players hand
+   if () {
+   
+   }
+
+
+
+}
+
+
+
+
+
+
+NEED TO SWITCH CARD IN ROT FROM A CARD FROM STOCK PILE TO CARD THAT GOT REPLACED IN PLAYERS HAND
+if (matches) {
+   replace card in players hand;
+   cardInRot = card that was replaced;
+}
+
+
+
+
+
+use for(i % #) when you want smt to happen only after a loop happens # amount of times, every __ do this
+
+
+
+
+
+(playerHand.get(1)).substring(0, ((playerHand.get(1)).indexOf(' ')));
